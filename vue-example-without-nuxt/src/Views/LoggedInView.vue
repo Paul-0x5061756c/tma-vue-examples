@@ -14,4 +14,3 @@ const { loggedInUser, clearLoggedInUser } = useUserStore()
 </script>
 
 <style scoped></style>
-@/stores/userStore
