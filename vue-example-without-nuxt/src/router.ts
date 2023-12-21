@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginViewVue from './Views/LoginView.vue'
-import LoggedInViewVue from './Views/LoggedInView.vue'
-import UnauthorizedViewVue from './Views/Error/UnauthorizedView.vue'
-import NotfoundViewVue from './Views/Error/404View.vue'
 import { useUserStore } from './stores/userStore'
+import loginViewVue from './views/loginView.vue'
+import loggedInViewVue from './views/loggedInView.vue'
+import unauthorizedViewVue from './views/error/unauthorizedView.vue'
+import notfoundViewVue from './views/error/404View.vue'
 
 const routes = [
-  { path: '/', component: LoginViewVue },
-  { path: '/logged-in', component: LoggedInViewVue, meta: { requiresAuth: true } },
-  { path: '/unauthorized', component: UnauthorizedViewVue },
-  { path: '/:pathMatch(.*)*', component: NotfoundViewVue }
+  { path: '/', component: loginViewVue },
+  { path: '/logged-in', component: loggedInViewVue, meta: { requiresAuth: true } },
+  { path: '/unauthorized', component: unauthorizedViewVue },
+  { path: '/:pathMatch(.*)*', component: notfoundViewVue }
 ]
 
 const router = createRouter({
