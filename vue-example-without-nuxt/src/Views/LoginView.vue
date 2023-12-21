@@ -2,8 +2,8 @@
   <div class="login-container">
     <form>
       <div class="logos">
-      <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
-      <img alt="TMA logo" class="logo" src="../assets/tma-logo.png" height="125" />
+        <img alt="Vue logo" class="logo" src="../assets/logo.svg" width="125" height="125" />
+        <img alt="TMA logo" class="logo" src="../assets/tma-logo.png" height="125" />
       </div>
       <inputComponent v-model="userName" labelText="Username" inputType="text" />
       <inputComponent v-model="password" labelText="Password" inputType="password" />
@@ -22,7 +22,7 @@
       <label v-if="errorMessage" class="errorMessage">{{ errorMessage }}</label>
     </form>
     <div class="counter-container">
-    <CounterComponent />
+      <CounterComponent />
     </div>
   </div>
 </template>
@@ -88,7 +88,7 @@ form {
   color: red;
 }
 
-.counter-container{
+.counter-container {
   width: 600px;
 }
 
